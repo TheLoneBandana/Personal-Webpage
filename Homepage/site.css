@@ -1,0 +1,25 @@
+/*Tells the page to use the given borderbox
+instead of the content box*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+h1 {
+    color: darkorchid;
+}
+
+p {
+    text-align: justify;
+    color: white;
+}
+
+h2 {
+    color: darkorchid;
+}
+
+.primaryImage {
+    width: 60%;   /* Set image width */
+    height: auto;   /* Keeps the original aspect ratio */
+    border-radius: 50%; /* Makes a perfect circle */
+    object-fit: cover;
+}

@@ -1,0 +1,49 @@
+<!--Tells browsers that this is an html document-->
+<!doctype html>
+<!--Tells browsers that the content is in english-->
+<html lang="en">
+	<!--information about the page that is not visible on the page-->
+	<head>
+		<!--Tells browsers how to interpret text characters-->
+		<meta charset="utf-8" />
+		<!--width = device-width: matches the devices screen width,
+		initial-scale = 1: sets the zoom level-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--loads the css file-->
+		<link rel="stylesheet" href="site.css" />
+		<title>My First Page</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<!--Everything that's in the body shows up on the page-->
+	<body class="m-8 text-center bg-cyan-500">
+<!--Header desctribes what the content is, not just how it looks-->
+<header>
+    <!--Main heading, should only be 1 h1 per page-->
+	<h1 class = "text-[40px]">Tyler's Homepage</h1>
+	<nav class = "mt-2 space-x-4"> <!--Navigation links-->
+		<a href="index.html" class= "text-blue-700 text-[20px] hover:underline">Home</a>
+		<a href="links.html" class= "text-blue-700 text-[20px] hover:underline">Links</a>
+	</nav>
+</header>
+
+<!--Primary content of the page, should not include headers, footers, or sidebars-->
+<main class = "mt-6 flex justify-center">
+    <!--Articles can be used for standalone sections-->
+	<article class = "max-w-xl">
+        <!--Subheading-->
+		<h2 class = "text-[30px]">Biography</h2>
+        <img
+			src="images/sunset.jpg"
+			alt="profile picture"
+			class="w-3/5 mx-auto rounded-[50%] object-cover mb-6"
+      	/>
+        <!--Paragraph, used for blocks of texts-->
+		<p class = "bg-purple-700 rounded-full px-6 py-3">
+            Howdy! My name's Tyler Ruesch and I'm a senior at ECU.
+            I've moved around the southeast US for most of my life, but I've been here
+            in NC for about a decade now.
+        </p>
+	</article>
+</main>
+	</body>
+</html>
